@@ -1,4 +1,6 @@
-  const form = document.querySelector('.feedback-form');
+const form = document.querySelector('.feedback-form');
+const input = document.getElementsByName('email');
+input[0].placeholder = 'Type area';
 
   const localData = JSON.parse(localStorage.getItem("feedback-form-state")) || {};
   form.email.value = localData.email || '';
